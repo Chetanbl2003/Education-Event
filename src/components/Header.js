@@ -13,7 +13,6 @@ const Header = () => {
           <h1 className="text-2xl font-bold">EduEvent</h1>
         </Link>
 
-        {/* Desktop Navigation */}
         <nav className="hidden md:flex space-x-6">
           <Link to="/" className="hover:text-yellow-300">Home</Link>
           <Link to="/courses" className="hover:text-yellow-300">Courses</Link>
@@ -22,13 +21,11 @@ const Header = () => {
           <Link to="/fundraising" className="hover:text-yellow-300">Fundraising</Link>
         </nav>
 
-        {/* Mobile Menu Button */}
         <button className="md:hidden focus:outline-none" onClick={() => setMenuOpen(!menuOpen)}>
           {menuOpen ? "✖" : "☰"}
         </button>
       </div>
 
-      {/* Mobile Navigation */}
       {menuOpen && (
         <nav className="md:hidden bg-blue-800 p-4">
           <ul className="flex flex-col space-y-4">
